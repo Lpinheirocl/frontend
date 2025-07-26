@@ -1,0 +1,57 @@
+.home-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 60px;
+  padding: 40px;
+  height: 100vh;
+  box-sizing: border-box;
+
+  background-image: url('/assets/images/background.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.card {
+  background-color: rgba(25, 0, 170, 0.9); /* Azul escuro com transparência */
+  border-radius: 20px;
+  padding: 20px;
+  width: 300px;
+  color: white;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.5);
+}
+
+
+
+.card h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.app-item {
+  display: flex;
+  align-items: center;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 10px 0;
+  background-color: #1900aa;
+  border-radius: 5px;
+}
+
+.app-image {
+  width: 50px;
+  height: 50px;
+  background-color: #567dff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  font-size: 10px;
+  color: black;
+}
+
+.app-name {
+  font-weight: bold;
+}

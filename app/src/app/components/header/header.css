@@ -1,0 +1,14 @@
+.header-container {
+  width: 100%;               /* Preenche 100% da largura do pai */
+  background-color: #1900aa; /* Azul escuro */
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 20px 0;
+  margin: 0;
+}
+
+.header-title {
+  font-size: 20px;
+  margin: 0;
+}
