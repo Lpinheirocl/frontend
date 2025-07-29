@@ -14,7 +14,13 @@ services:
     build:
       context: .
       dockerfile: docker/nginx.dockerfile
-    container_name: nginx-frontend
+    container_name: nginx-frontende
+    environment:
+      - NGINX_HOST=localhost
+      - NGINX_TIMEOUT=300
+      - NGINX_STATIC_FOLDER
+      - NGINX_ACCEPT_MUTEX=on
+      - NGINX_ACCESS_LOG=off
     ports:
       - "80:80"
     depends_on:
