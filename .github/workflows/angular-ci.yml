@@ -40,25 +40,6 @@ jobs:
         push: false
         tags: ghcr.io/lpinheirocl/angular-nginx:test
 
-    # Se chegou até aqui, faz build ARM e push
-    - name: Build Angular ARM image
-      uses: docker/build-push-action@v4
-      with:
-        context: .
-        file: ./docker/app.dockerfile
-        platforms: linux/arm/v7
-        push: true
-        tags: ghcr.io/lpinheirocl/angular-app:latest
-
-    - name: Build Nginx ARM image
-      uses: docker/build-push-action@v4
-      with:
-        context: .
-        file: ./docker/nginx.dockerfile
-        platforms: linux/arm/v7
-        push: true
-        tags: ghcr.io/lpinheirocl/angular-nginx:latest
-
     - name: Deploy no K3s
       uses: appleboy/ssh-action@v0.1.8
       with:
