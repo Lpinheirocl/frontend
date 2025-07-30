@@ -49,4 +49,3 @@ jobs:
         script: |
           echo "Conectado com sucesso no Raspberry Pi via chave SSH"
           hostname
-
